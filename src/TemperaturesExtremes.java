@@ -16,24 +16,24 @@ public class TemperaturesExtremes {
 		int[][] Temperatures = new int[Villes.length][2];
 		
 	    for (int i = 0; i < Temperatures.length; ++i) {
-	    	System.out.println("Entrez une temperature pour: " + Villes[i]);
-	    	if (i%2 == 0) {
-	    		System.out.println("Entrez une temperature min i: " + i);
-	    	}else {
-	    		System.out.println("Entrez une temperature max i: " + i);
-	    	}
+	    	System.out.println("Entrez les temperatures pour: " + Villes[i]);
 		    for (int j= 0; j < Temperatures[i].length; ++j) {
+		    	if (j%2 == 0) {
+		    		System.out.println(" min : ");
+		    	}else {
+		    		System.out.println(" max : ");
+		    	}
 		    	Temperatures[i][j] = myObj.nextInt();
 		      } 
 	     } 
 	    
 	    for (int i = 0; i < Temperatures.length; ++i) {
-	    	System.out.println("Les temperatures sont " + Villes[i]);
+	    	System.out.println("Les temperatures à " + Villes[i] + " sont ");
 		    for (int j= 0; j < Temperatures[i].length; ++j) {
 		    	if (j%2 == 0) {
-		    		System.out.println("min j : " + Temperatures[i][j]);
+		    		System.out.println(" min : " + Temperatures[i][j]);
 		    	}else {
-		    		System.out.println("max j : " + Temperatures[i][j]);
+		    		System.out.println(" max : " + Temperatures[i][j]);
 		    	}
 		      } 
 	     } 
